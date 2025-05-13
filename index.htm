@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="blackjack.css">
+</head>
+<body>
+
+    <div class="container">
+        <h4>Hit to the highest point but not more than 21 </h4>
+        <div class="container main-box">
+            <h2>Blackjack Game</h2>
+            <h3 id="h3_title">Let's play</h3>
+            <div class="game-ground">
+                <div class="flexbox-ground">
+                    <div class="game yourside">
+                        <h3 class="current-score" >You: <span id="yourScore">0</span></h3>
+                        <div class="cards" id="yourCards"></div>
+                    </div>
+                    <div class="game botSide">
+                        <h3 class="current-bot-score" >Bot: <span id="botScore">0</span></h3>
+                        <div class="cards" id="botCards"></div>
+                    </div>
+                </div>
+                <div class="action-btn">
+                    <button class="btn hit" onclick="hitFunction()">Hit</button>
+                    <button class="btn stand" onclick="standFunction()">Stand</button>
+                    <button class="btn deal" onclick="dealFunction()">Deal</button>
+                </div>
+            </div>
+            <div class="result-score">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Win</th>
+                            <th>Draw</th>
+                            <th>Losse</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td ><span id="win-score">0</span></td>
+                            <td ><span id="draw-score">0</span></td>
+                            <td ><span id="losse-score">0</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="blackjack.js"></script>
+
+</body>
+</html>

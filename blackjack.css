@@ -1,0 +1,76 @@
+.container{
+    text-align: center;
+    font-family: Lucida Sans;
+}
+.main-box{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 10px;
+    background-color: rgb(72, 113, 190);
+    color: white;
+}
+.game-ground{
+    background-color: darkgreen;
+}
+.flexbox-ground{
+    border: 1px solid black;
+    display: flex;
+    color: white;
+}
+.game{
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+.cards{
+    display: flexbox;
+    flex-wrap: wrap;
+    padding: 5px;
+    border: 1px solid black;
+    height: 400px;
+}
+.action-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    padding: 10px;
+    font-size: 24px;
+    margin: 5px;
+    border-radius: 4px;
+    color: white;
+}
+.hit{
+    background-color: rgb(26, 26, 248);
+}
+.hit:hover{
+    background-color: dodgerblue;
+}
+.stand{
+    background-color: darkorange;
+}
+.stand:hover{
+    background-color: rgb(247, 162, 59);
+}
+.deal{
+    background-color:rgb(248, 30, 73);
+}
+.deal:hover{
+    background-color: rgb(250, 58, 96);
+}
+
+.card-img{
+    width: 100px;
+    height: 120px;
+    margin: 5px;
+}
+table{
+    margin: auto;
+}
+td, th {
+    border: 1px solid black;
+    height: 30px;
+    padding: 5px;
+}
