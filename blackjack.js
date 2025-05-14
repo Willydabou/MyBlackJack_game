@@ -29,18 +29,18 @@ const cards = [
   const winSound = new Audio('WIN.mp3');
   const loseSound = new Audio('Lost.mp3');
   
-  // DOM Helpers
+  // ------------------------------------------------------- DOM Helpers
   const updateText = (id, text) => document.getElementById(id).textContent = text;
   const updateColor = (id, color) => document.getElementById(id).style.color = color;
   const updateScore = (id, score) => document.getElementById(id).innerHTML = score;
   
-  function getRandomCard() {  //----------------------------Choose card
+  function getRandomCard() {  //---------------------------- Choose card
     return cards[Math.floor(Math.random() * cards.length)];
   }
 
 
   
-  function createCardImage(src) { //-----------------------Create card image
+  function createCardImage(src) { //----------------------- Create card image
     const img = document.createElement('img');
     img.src = src;
     img.className = 'card-img';
